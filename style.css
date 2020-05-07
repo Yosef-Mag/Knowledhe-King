@@ -1,4 +1,6 @@
-body {
+#show {
+	display: block;
+	visibility: visible;
 	font-family: 'Comic Neue', cursive;
 	background-image: url("imgs/background.jpg");
 	background-repeat: no-repeat;
@@ -16,19 +18,23 @@ body {
 }
 
 #quiz {
-	margin-left: 740px;
+	margin-left: 600px;
 	background: #142c4e;
 	border-radius: 15px;
 	padding: 40px;
-	width: 400px;
+	width: 800px;
 
 }
 
 .questions {
-	font-size: 20px;
+	font-size: 26px;
 	color: #b380ff;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	margin-left: 35px;
+	margin-left: 30px;
+	border-radius: 10px;
+	border-style: hidden;
+
+
 }
 
 .question-box {
@@ -44,9 +50,16 @@ body {
 }
 
 .Q1T {
+	margin-right: 100px;
+	margin-left: 2px;
 	font-size: 16px;
 	color: #d1b3ff;
 	
+}
+
+.Q2T {
+	font-size: 28px;
+	color: #d1b3ff;;
 }
 
 #Q1M {
@@ -116,12 +129,12 @@ body {
 	background: #bf80ff;
 	border: 1px;
 	border-radius: 5px;
-	padding: 10px;
+	padding: 50px;
 	color: #26004d;
-	font-size: 16px;
+	font-size: 20px;
 	transition-duration: .5s;
 	margin-top: 15px;
-	margin-left: 150px;
+	margin-left: 320px;
 
 }
 
@@ -138,7 +151,7 @@ body {
 #result {
 	display: none;
 	visibility: hidden;
-	margin-left: 740px;
+	margin-left: 680px;
 	background: #142c4e;
 	border-radius: 15px;
 	padding: 100px;
@@ -150,11 +163,4 @@ body {
 #picture {
 	width: 375px;
 	height: 245px;
-}
-
-
-
-#show {
-	display: block;
-	visibility: visible;
 }
