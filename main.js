@@ -72,13 +72,13 @@ $(document).ready(
 
     document.getElementById("message_reslult").innerHTML = messages[score];
     document.getElementById("message_reslult").style.color = "#b380ff"
-    document.getElementById("message_reslult").style.fontSize = "xx-large"
+    document.getElementById("message_reslult").style.fontSize = "xxx-large"
     document.getElementById("message_reslult").style.marginLeft = "125px"
 
     document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
     document.getElementById("number_correct").style.color = "#b380ff"
-    document.getElementById("number_correct").style.fontSize = "xx-large"
-    document.getElementById("number_correct").style.marginLeft = "50px"
+    document.getElementById("number_correct").style.fontSize = "x-large"
+    document.getElementById("number_correct").style.marginLeft = "90px"
 
     document.getElementById("picture").src = pictures[score];
 
