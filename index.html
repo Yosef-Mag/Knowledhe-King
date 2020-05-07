@@ -12,18 +12,26 @@
 
 
 <body id = "show">
-
+  		
 	<h1 id="title">King of knowledge</h1>
+<!-- Start Page -->
+      <form id = "startQ" name = "start"> 
+      	<input type="text" name="Name" id="Name" placeholder="type your Name here"  align="center">
+    <br>
+    	<p id="genderS">Select your gender:<p>
+    	<input type="radio" id="genderM" name="gender" value="male"><span class="genders">Male</span>
+    	<input type="radio" id="genderF" name="gender" value="female"><span class="genders">Female</span>
+    <br>
+        <input id = "startB" type = "button" value = "Start"  align="center">
+      </form>
+<!--Start Page-->
 
-<div id = "result">
-<p id = "number_correct"></p>
-<p id = "message_reslult"></p>
-<img id = "picture">
-</div>
 
+
+<!-- Quiz Page -->
 		<form id = "quiz" name = "quiz">
-
 <div class = "question-box">
+<!-- Q1-->	
 			<p class = "questions">Q1: what will be the result ?<p>
 					<img src="imgs/Q1.png" id= "Q1M">
 	<br>
@@ -31,7 +39,7 @@
 	<br>
 </div>	
     <br>					
-<!--  -->
+<!--Q2-->
 <div class = "question-box">
 			<p class = "questions"> Q2: When did Jordan get independence?</p>
 					<input type="radio" name="Q1" clas="Q1" value="28/5/1946"><span class = "Q1T">28/5/1946</span>
@@ -41,7 +49,7 @@
 	<br>
 	<br>				
 </div>						
-<!--  -->
+<!--Q3-->
 <br>
 <div class = "question-box">
 			<p class = "questions">Q3: Riddle me this: David’s parents have three sons: Snap, Crackle, and what’s the name of the third son?</p>
@@ -49,7 +57,7 @@
 	<br>				
 	
 </div>					
-<!--  -->
+<!--Q4-->
     <br>
  <div class = "question-box">
 			<p class = "questions">Q4: Can you guess what is in this picture?</p>
@@ -60,8 +68,8 @@
   						<input type="text" name="Answer" id="Answer4" placeholder="type your guess here">
   	<br>					
 </div>	  
-<br>						
-<!--  -->
+<br>	
+<!--Q5-->
 <div class = "question-box">
 			<p class = "questions">Q5: guess the next number</p>
 					<img src="imgs/Q5.png" id="Q5M">	
@@ -77,8 +85,15 @@
           <input id = "button" type = "button" value = "Submit!!" >
     <br>      
 </form>
+<!-- Quiz Page -->
 
-
+<!--Result Page-->
+<div id = "result">
+	<p id = "number_correct"></p>
+	<p id = "message_reslult"></p>
+	<img id = "picture">
+</div>
+<!--Result Page-->
 
 <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 <script src = "main.js"></script>

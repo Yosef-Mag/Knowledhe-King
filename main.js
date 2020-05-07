@@ -1,4 +1,20 @@
 $(document).ready(  
+    $("#startB").click(
+        function() {
+            var namee = $("#name").val()
+            var gen = $("#gendger").val()
+
+            document.getElementById("startQ").style.display = "none";
+            document.getElementById("startQ").style.visibility = "hidden"
+
+            document.getElementById("result").style.display = "none";
+            document.getElementById("result").style.visibility = "hidden";
+
+            document.getElementById("quiz").style.display = "block";
+            document.getElementById("quiz").style.visibility = "visible";
+        }),
+
+
     $("#button").click(
     function () {
         var question1 = $("#Answer1").val();
@@ -9,7 +25,8 @@ $(document).ready(
             question4 = question4.toLowerCase();
         var question5 = $('input[name=Q5]:checked').val();
         var correct = 0;
-    
+
+
     if (question1 === "3") {
         correct++;
     };
@@ -46,6 +63,7 @@ $(document).ready(
         score = 0;
     };
 
+        
     document.getElementById("result").style.display = "block";
     document.getElementById("result").style.visibility = "visible";
 
@@ -55,7 +73,7 @@ $(document).ready(
     document.getElementById("message_reslult").innerHTML = messages[score];
     document.getElementById("message_reslult").style.color = "#b380ff"
     document.getElementById("message_reslult").style.fontSize = "xx-large"
-    document.getElementById("message_reslult").style.marginLeft = "90px"
+    document.getElementById("message_reslult").style.marginLeft = "125px"
 
     document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
     document.getElementById("number_correct").style.color = "#b380ff"
@@ -65,4 +83,4 @@ $(document).ready(
     document.getElementById("picture").src = pictures[score];
 
 })
-);
+)
