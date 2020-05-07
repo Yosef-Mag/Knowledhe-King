@@ -3,26 +3,85 @@
 
 <head>
 
-	<title>Knowledhe King</title>
+	<title>King of knowledge</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+
 
 </head>
-<body>
-<div class="start">
 
-<h1>Knowledhe King</h1>
 
- 
-<input type="text" name="Player name" id="playname" placeholder="type your name">
+<body id = "show">
+
+	<h1 id="title">King of knowledge</h1>
+
+<div id = "result">
+<p id = "number_correct"></p>
+<p id = "message_reslult"></p>
+<img id = "picture">
+</div>
+
+		<form id = "quiz" name = "quiz">
+
+<div class = "question-box">
+			<p class = "questions">Qustion 1: what will be the result ?<p>
+					<img src="imgs/Q1.png" id= "Q1M">
 	<br>
-<h4>Chose your gender</h4>
-<input type="radio" name="gender">Male
-<input type="radio" name="gender">Female
+						<input type="text" name="Answer" id="Answer1" placeholder="type your answer here">
 	<br>
-<button id= "sQuiz"><a href=quiz.html>Start The Quiz</a></button>
- </div>
+</div>	
+    <br>					
+<!--  -->
+<div class = "question-box">
+			<p class = "questions"> Qustion 2: When did Jordan get independence?</p>
+					<input type="radio" name="Q1" clas="Q1" value="28/5/1946"><span class = "Q1T">28/5/1946</span>
+					<input type="radio" name="Q1" clas="Q1" value="15/5/1947"><span class = "Q1T">15/5/1947</span>
+					<input type="radio" name="Q1" clas="Q1" value="25/5/1946"><span class = "Q1T">25/5/1946</span>
+					<input type="radio" name="Q1" clas="Q1" value="25/6/1946"><span class = "Q1T">25/6/1946</span>
+	<br>
+	<br>				
+</div>						
+<!--  -->
+<br>
+<div class = "question-box">
+			<p class = "questions">Qustion 3: Riddle: David’s parents have three sons: Snap, Crackle, and what’s the name of the third son?</p>
+					<input type="text" name="Answer" id="Answer3" placeholder="type your guess here">
+	<br>				
+	
+</div>					
+<!--  -->
+    <br>
+ <div class = "question-box">
+			<p class = "questions">Qustion 4: Can you guess what is in this picture?</p>
+			<img src="imgs/Q4.jpg" id="Q4M">
+    <br>
+  					<p id = "hint">Hint : You can find it in the nuture</p>
+    <br>
+  						<input type="text" name="Answer" id="Answer4" placeholder="type your guess here">
+  	<br>					
+</div>	  
+<br>						
+<!--  -->
+<div class = "question-box">
+			<p class = "questions">Qustion 5: guess the next number</p>
+					<img src="imgs/Q5.png" id="Q5M">	
+	<br>
+					<input type="radio" name="Q5" class="Q5" value="70"><span class = "Q1T">70</span>
+					<input type="radio" name="Q5" class="Q5" value="74"><span class = "Q1T">74</span>
+					<input type="radio" name="Q5" class="Q5" value="75"><span class = "Q1T">75</span>
+					<input type="radio" name="Q5" class="Q5" value="77"><span class = "Q1T">77</span>
+    <br>
+    <br>
+</div>	
+    <br>    
+          <input id = "button" type = "button" value = "I'm finished!" >
+    <br>      
+</form>
+
+
+
 <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+<script src = "main.js"></script>
 
 </body>
 
